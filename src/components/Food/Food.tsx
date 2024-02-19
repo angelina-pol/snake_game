@@ -2,7 +2,9 @@ import './Food.css';
 
 const Food = () => {
   return (
-    <p></p>
+    <div className="food">
+
+    </div>
   );
 };
 
