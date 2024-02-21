@@ -1,0 +1,13 @@
+.counterLives {
+  color: rgb(205, 223, 223);
+  margin-right: 3em;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  padding: 0.5em;
+  background-color: rgb(15, 45, 54);
+  border-radius: 1.2em;
+}
+
+.heart {
+   color: rgb(255, 54, 131)
+}

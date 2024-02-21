@@ -1,0 +1,10 @@
+.score {
+  color: rgb(205, 223, 223);
+  margin-right: 3em;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 1.5em;
+  padding: 0.5em;
+  background-color: rgb(15, 45, 54);
+  border-radius: 1.2em;
+}
