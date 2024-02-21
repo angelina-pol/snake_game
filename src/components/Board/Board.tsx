@@ -8,12 +8,8 @@ const Board = () => {
   
   return (
     <div className="main">
-      <div className="borderBackground">
-        <div className="background">
-          <div className="board">
-            {Array(store.widthBord).fill(column)}
-          </div>
-        </div>
+      <div className="board">
+        {Array(store.widthBord).fill(column)}
       </div>
     </div>
   );

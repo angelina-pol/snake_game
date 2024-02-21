@@ -1,0 +1,19 @@
+.borderBackground {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background-color: rgb(56, 127, 147);
+  padding: 1em;
+  box-shadow: 0em 0em 2em 2em rgb(48, 111, 129, 20%);
+}
+
+.background {
+  display: flex;
+  background-color: rgb(26, 66, 79);
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  padding: 3em;
+  box-shadow: 0em 0em 1em 1em rgb(48, 111, 129);
+}

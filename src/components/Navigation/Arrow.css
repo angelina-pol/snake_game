@@ -1,0 +1,9 @@
+.arrow {
+  width: 2em;
+  height: 2em;
+  border: 0.2em solid rgb(66, 93, 128);
+  background-color: rgb(12, 25, 53);
+  color: rgb(86, 151, 255);
+  text-align: center;
+  line-height: 2em;
+}
