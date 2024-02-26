@@ -2,7 +2,9 @@ import './Snake.css';
 
 const Snake = () => {
   return (
-    <p></p>
+    <div className="snake">
+
+    </div>
   );
 };
 

@@ -1,0 +1,7 @@
+.snake {
+  width: 1.5em;
+  height: 1.5em;
+  border-bottom: 0.2em solid rgb(28, 51, 88);
+  border-right: 0.2em solid rgb(28, 51, 88);
+  background-color: rgb(163, 232, 74);
+}

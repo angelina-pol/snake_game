@@ -1,5 +1,5 @@
-import food from "./FoodStore";
-import snake from "./SnakeStore";
+import foodStore from "./FoodStore";
+import snakeStore from "./SnakeStore";
 class MainStore {
   widthBord = 12;
   heightBoard = 12;
@@ -8,27 +8,40 @@ class MainStore {
 
   }
 
-  changeDirection = () => {
-    
-  }
-
-  moveRight = () => {
-
-  }
-
-  moveLeft = () => {
-    
+  changeDirection = (type: string) => {
+    if (type === 'up') {
+      this.moveUp();
+    }
+    if (type === "left") {
+      this.moveLeft();
+    }
+    if (type === "right") {
+      this.moveRight();
+    }
+    if (type === "down") {
+      this.moveDown();
+    }
   }
 
   moveUp = () => {
     
   }
 
-  moveDown  = () => {
+  moveLeft = () => {
+
+  }
+
+  moveRight = () => {
     
   }
 
+  moveDown = () => {
+    
+  }
 }
+
+foodStore.startGenerationFood();
+//foodStore.endGenerationFood(timerId);
 
 const store = new MainStore();
 

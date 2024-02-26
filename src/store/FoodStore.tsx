@@ -1,26 +1,46 @@
+import { makeAutoObservable, observable } from "mobx";
 import store from "./MainStore";
+
 class Food {
+  xCoordinateStart = 3;
+  yCoordinateStart = 8;
+
+  xCoordinate = this.xCoordinateStart;
+  yCoordinate = this.yCoordinateStart;
 
   constructor () {
-
-  }
+    makeAutoObservable(this, {
+      xCoordinate: observable,
+      yCoordinate: observable,
+    })
+  };
 
   makeFood = () => {
-    const xCoordinate = Math.floor(Math.random() * (store.widthBord + 1));
-    const yCoordinate = Math.floor(Math.random() * (store.heightBoard + 1));
-    return [xCoordinate, yCoordinate];
-  }
+    const xCoordinate = Math.floor(Math.random() * (store.widthBord));
+    const yCoordinate = Math.floor(Math.random() * (store.heightBoard));
+    this.xCoordinate = xCoordinate;
+    this.yCoordinate = yCoordinate;
+  };
 
   eatingFood = () => {
 
-  }
+  };
 
   deleteFood = () => {
-    
-  }
 
-}
+  };
 
-const food = new Food();
+  startGenerationFood = () => {
+    let timerId = setInterval(() => this.makeFood(), 3000);
+    return timerId;
+  };
+  /*
+  endGenerationFood = (timerId: any) => {
+    setTimeout(() => { clearInterval(timerId); alert('stop'); }, 5000);
+  };
+  */
+};
 
-export default food;
+const foodStore = new Food();
+
+export default foodStore;

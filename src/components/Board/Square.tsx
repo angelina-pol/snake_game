@@ -1,9 +1,13 @@
 import './Square.css';
 
-const Square = () => {
+type SquareProps = React.PropsWithChildren<{
+  
+}>;
+
+const Square: React.FC<SquareProps> = ({ children }) => {
   return (
     <div className="square">
-
+      {children}
     </div>
   );
 };
