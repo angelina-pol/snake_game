@@ -1,18 +1,16 @@
 import './Arrow.css';
 import store from '../../store/MainStore';
+import { useState } from 'react';
 
 type ArrowProps = {
   typeOfArrow: string;
-  newType: string;
-  typeBefore: string;
-  setTypeBefore: (newType: string) => void;
+  newType: string; 
 }
 
-const Arrow: React.FC<ArrowProps> = ({ typeOfArrow, newType, typeBefore, setTypeBefore }) => {
-  setTypeBefore(newType);
+const Arrow: React.FC<ArrowProps> = ({ typeOfArrow, newType }) => {
   return (
     <div className="arrow">
-      <button className="button" onClick={() => store.changeDirection(newType, typeBefore)}>{typeOfArrow}</button>
+      <button className="button" onClick={() => store.changeDirection(newType)}>{typeOfArrow}</button>
     </div>
   );
 };
